@@ -8,7 +8,7 @@ let apiQuotes =[];
 // show new quote
 function newQuote() {
     //pick a random quote from apiQuotes array 
-    const quote = apiQuotes[Math.floor(math.random() * apiQuotes.length)];
+    const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
 
     // unknown author if else :
     if(!quote.author) {
@@ -33,7 +33,7 @@ async function getQuotes() {
         console.log(apiQuotes);
         newQuote();
     } catch (error) {
-       console.log('error')  
+       console.log('error');  
     }
 }
 
